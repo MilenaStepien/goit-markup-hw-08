@@ -130,7 +130,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -161,7 +161,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo--modifier {
-    margin-left: 100px;
+    margin-left: 83px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -291,8 +291,8 @@ img {
   color: #2196f3;
 }
 .form__statement {
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
@@ -427,7 +427,7 @@ img {
   content: '';
   display: flex;
   position: absolute;
-  top: 93px;
+  top: 76px;
   height: 4px;
   width: 53px;
   border-radius: 2px;
@@ -690,6 +690,10 @@ img {
       url('../images/hero/img@2x.jpg');
   }
 }
+.advantages {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
@@ -707,6 +711,10 @@ img {
   color: #212121;
   margin-bottom: 10px;
   padding-top: 30px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
 }
 .advantages__header__header:not(:last-child) {
   margin-right: 30px;
@@ -876,6 +884,12 @@ img {
 }
 .our-team {
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .customers .container {
   display: flex;
@@ -886,7 +900,6 @@ img {
   gap: 30px;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 30px;
 }
 .clients__logo {
   display: flex;
@@ -958,6 +971,15 @@ img {
 .footer-address__link--theme {
   color: #fff;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-address__item {
+    margin-right: 165px;
+  }
+  .footer .logo {
+    margin-right: 204px;
+    margin-left: 39px;
+  }
+}
 .footer-newsletter {
   width: 100vw;
   display: flex;
@@ -984,12 +1006,13 @@ img {
 }
 .footer-newsletter__input {
   background: transparent;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 16px;
 }
 .footer-newsletter__input::placeholder {
   letter-spacing: 0.03em;
@@ -1068,10 +1091,10 @@ img {
 .portfolio-filters__list {
   display: flex;
   justify-content: center;
-  padding-left: 510px;
-  padding-right: 518px;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  margin-top: 50px;
 }
 .portfolio-filters__button {
   padding: 6px 22px;
@@ -1095,6 +1118,7 @@ img {
   cursor: pointer;
 }
 .portfolio-filters__item {
+  margin-bottom: 8px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1107,23 +1131,25 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-section {
-  margin-bottom: 94px;
+  margin-bottom: 60px;
 }
 .portfolio-projects__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 34px;
-  list-style: none;
+  width: 100vw;
 }
 .portfolio-project-card__top-section {
   position: relative;
-  width: 370px;
+  width: 450px;
   height: 294px;
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
   overflow: hidden;
+  width: 100vw;
+}
+.portfolio-project-card__photo {
+  margin-left: -15px;
 }
 .portfolio-project-card__title {
   font-weight: 700;
@@ -1140,7 +1166,6 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 4px;
-  margin-bottom: 20px;
   padding-left: 24px;
 }
 .portfolio-project-card__overlay {
@@ -1186,6 +1211,11 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-project-card {
+    margin-bottom: 0px;
+  }
+}
 .portfolio-project-card:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1202,5 +1232,13 @@ img {
     width: 354px;
     height: 294px;
   }
+}
+.portfolio-project-card {
+  margin-left: 15px;
+}
+.portfolio-project-card__overlay-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 /*# sourceMappingURL=main.min.css.map */
