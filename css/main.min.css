@@ -164,17 +164,15 @@ img {
     margin-left: 83px;
   }
 }
-
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 450px;
-  min-height: 609px;
   background-color: #fff;
   border-radius: 4px;
-  padding: 40px;
+  padding: 20px;
   width: 100%;
 }
 .close-btn {
@@ -257,6 +255,7 @@ img {
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
+  max-height: 100px;
 }
 .form__textarea::placeholder {
   font-size: 12px;
@@ -281,12 +280,13 @@ img {
   background-position: center;
 }
 .form__link {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
 .form__statement {
+  display: inline-block;
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.03em;
@@ -294,7 +294,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .form__statement::before {
   display: inline-block;
@@ -361,6 +361,11 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero__header {
+    font-size: 44px;
+  }
 }
 .social {
   display: flex;
@@ -946,6 +951,11 @@ img {
   fill: #2196f3;
   border-color: #2196f3;
 }
+.clients__item {
+  width: 40%;
+  max-width: 450px;
+  display: flex;
+}
 .clients__icon {
   width: 106px;
   height: 60px;
@@ -1180,7 +1190,7 @@ img {
 .portfolio-project-card__top-section {
   position: relative;
   max-width: 450px;
-  height: 294px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
@@ -1226,7 +1236,7 @@ img {
   font-size: 18px;
   line-height: 1.556;
   letter-spacing: 0.03em;
-  padding-top: 49px;
+  padding-top: 0;
   padding-right: 45px;
   padding-bottom: 49px;
   padding-left: 24px;
@@ -1271,9 +1281,6 @@ img {
     width: 354px;
     height: 294px;
   }
-}
-.portfolio-project-card {
-  margin-left: 15px;
 }
 .portfolio-project-card__overlay-text {
   margin-left: auto;
